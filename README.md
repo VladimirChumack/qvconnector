@@ -4,25 +4,25 @@ Implementation of Qlik View connector written in Python
 
 Installation procedure
 
-Download and install python v 2.7 32 bit (version 3+ may work as well)
+ Download and install python v 2.7 32 bit (version 3+ may work as well)
 
-open commad line and run
+ open commad line and run
 
-pip install wxpython
+   pip install wxpython
 
-pip install arrow
+   pip install arrow
 
-pip install pyinstaller
+   pip install pyinstaller
 
-pip install openpyxl
+   pip install openpyxl
 
 This will install required python packages
 
 to build examples run bat files
 
-buid_connector.bat 
+   buid_connector.bat 
 
-buid_connector_excel.bat
+   buid_connector_excel.bat
 
 You may need to amend paths inside bat and connector files.
 
