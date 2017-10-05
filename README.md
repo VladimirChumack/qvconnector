@@ -21,5 +21,6 @@ buid_connector_excel.bat
 
 You may need to amend paths inside bat and connector files.
 
-Author Vladimir Chumack
+Author: Vladimir Chumack
+
 https://www.linkedin.com/in/vladimirchumack/
