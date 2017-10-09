@@ -4,7 +4,7 @@
 # https://www.linkedin.com/in/vladimirchumack/
 
 import datetime,logging
-from qvconnector import QlikConnector;
+from qvconnector.QlikConnector import QlikConnector;
 
 def getFields():
     "This procedure populates list of fields"
