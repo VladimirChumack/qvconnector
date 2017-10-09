@@ -4,7 +4,7 @@ Implementation of Qlik View connector written in Python
 
 Installation procedure
 
- Download and install python v 2.7 32 bit (version 3+ may work as well)
+ Download and install python v 2.7 32 bit
 
  open commad line and run
 
