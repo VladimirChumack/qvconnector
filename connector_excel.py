@@ -5,8 +5,8 @@
 # https://www.linkedin.com/in/vladimirchumack/
 
 import sys,os,logging, win32pipe, win32file ,wx, arrow, datetime, struct
-from qvconnector import QlikConnector;
 from openpyxl import load_workbook
+from qvconnector.QlikConnector import QlikConnector;
 
 app = wx.App(None)
 
