@@ -223,6 +223,10 @@ class QlikConnector:
     LastCommand = getCommand(XMLMessage);
     Parameter1=getParameter(XMLMessage,LastCommand,0);
     Parameter2=getParameter(XMLMessage,LastCommand,1);
+
+    logging.info('Parameter1:'+Parameter1);
+    logging.info('Parameter2:'+Parameter2);
+	
     if LastCommand in ['QVX_GET_EXECUTE_ERROR']:
        writeString(command_pipe,getOK('',''));
     if LastCommand in ['QVX_CONNECT','QVX_DISCONNECT','QVX_EDIT_CONNECT']:
@@ -244,6 +248,11 @@ class QlikConnector:
     elif LastCommand=='QVX_GENERIC_COMMAND':
       if Parameter1=='DisableQlikViewSelectButton':   
          writeString(command_pipe,getOK('true',''))
+      elif Parameter1=='JsonRequest':   
+         if Parameter2=='getInfo':        
+		    writeString(command_pipe,getOK('{"qMessage":""}',''))
+         elif Parameter2=='testConnection':        
+		    writeString(command_pipe,getOK('{"qMessage":"OK"}',''))
       elif Parameter1=='GetCustomCaption':   
            writeString(command_pipe,getOK(caption,''))
       else:
